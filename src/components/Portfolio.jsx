@@ -41,7 +41,7 @@ const Portfolio = () => {
 
       {/* DISCLAIMER */}
       <div className="container mx-auto px-4 md:px-12 py-8 text-center relative z-20">
-        <p className="text-[#e60023] font-black italic text-sm md:text-lg tracking-widest uppercase mb-2">
+        <p className="text-[#0057ff] font-black italic text-sm md:text-lg tracking-widest uppercase mb-2">
           Disclaimer:
         </p>
         <p className="text-white/60 text-[10px] md:text-xs font-sans max-w-xl mx-auto italic leading-relaxed">
@@ -52,7 +52,7 @@ const Portfolio = () => {
       {/* BEFORE / AFTER */}
       <div className="container mx-auto px-4 md:px-12 py-8 md:py-16 relative z-20">
         <div className="bg-[#050505] rounded-2xl md:rounded-[3rem] p-6 md:p-16 border border-white/10 relative overflow-hidden mx-auto max-w-5xl shadow-2xl">
-          <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-[#e60023]/20 to-transparent" />
+          <div className="absolute top-0 left-0 w-1/2 h-full bg-gradient-to-r from-[#0057ff]/20 to-transparent" />
 
           <div className="relative z-10 flex flex-col lg:flex-row gap-8 lg:gap-24 items-center w-full">
 

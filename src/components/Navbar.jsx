@@ -38,7 +38,7 @@ const Navbar = () => {
             to="home"
             smooth={true}
             duration={500}
-            className="text-3xl font-bebas tracking-widest text-[#e60023] cursor-pointer drop-shadow-md"
+            className="text-3xl font-bebas tracking-widest text-[#0057ff] cursor-pointer drop-shadow-md"
           >
             SHEEBA<span className="text-white">.</span>
           </Link>
@@ -53,7 +53,7 @@ const Navbar = () => {
               smooth={true}
               duration={500}
               spy={true}
-              activeClass="text-[#e60023] font-bold"
+              activeClass="text-[#0057ff] font-bold"
               className="text-white/60 hover:text-white cursor-pointer transition-colors text-sm uppercase tracking-widest font-sans"
             >
               {link.name}
@@ -63,7 +63,7 @@ const Navbar = () => {
             to="contact"
             smooth={true}
             duration={500}
-            className="px-6 py-2 border border-white/30 text-white rounded-md hover:bg-[#e60023] hover:border-[#e60023] transition-colors cursor-pointer text-xs font-bold uppercase tracking-widest font-sans"
+            className="px-6 py-2 border border-white/30 text-white rounded-md hover:bg-[#0057ff] hover:border-[#0057ff] transition-colors cursor-pointer text-xs font-bold uppercase tracking-widest font-sans"
           >
             Let's Talk
           </Link>
@@ -95,7 +95,7 @@ const Navbar = () => {
                   smooth={true}
                   duration={500}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-white text-xl font-bebas uppercase tracking-[0.2em] cursor-pointer hover:text-[#e60023] transition-colors"
+                  className="text-white text-xl font-bebas uppercase tracking-[0.2em] cursor-pointer hover:text-[#0057ff] transition-colors"
                 >
                   {link.name}
                 </Link>
@@ -105,7 +105,7 @@ const Navbar = () => {
                 smooth={true}
                 duration={500}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="mt-4 px-8 py-3 bg-[#e60023] text-white rounded-md font-bebas text-xl uppercase tracking-widest"
+                className="mt-4 px-8 py-3 bg-[#0057ff] text-white rounded-md font-bebas text-xl uppercase tracking-widest"
               >
                 Let's Talk
               </Link>

@@ -3,7 +3,13 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <section id="about" className="relative pb-24 top-[-20px] bg-background">
+    <section id="about" className="relative pb-24 top-[-20px] overflow-hidden" style={{background: 'radial-gradient(ellipse 70% 50% at 100% 0%, rgba(0,87,255,0.2) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 0% 100%, rgba(0,50,200,0.15) 0%, transparent 60%), #000000'}}>
+
+      {/* Blue Gradient Glows */}
+      <div className="absolute top-0 right-[-5%] w-[600px] h-[600px] bg-[#0057ff]/15 rounded-full blur-[150px] z-0 pointer-events-none" />
+      <div className="absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-[#003ecc]/20 rounded-full blur-[130px] z-0 pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[300px] bg-[#0057ff]/08 rounded-full blur-[120px] z-0 pointer-events-none" />
+
       <div className="container mx-auto px-6 md:px-12 relative z-20">
         
         {/* Main Grid: Left (Image) + Right (Text Content) */}
@@ -18,9 +24,9 @@ const About = () => {
               transition={{ duration: 0.8 }}
               className="w-full max-w-[340px] relative aspect-[3/4.5] overflow-hidden rounded-[2rem] border-[4px] border-white p-1"
             >
-              <div className="w-full h-full rounded-[1.8rem] overflow-hidden relative bg-[#e60023]/20">
+              <div className="w-full h-full rounded-[1.8rem] overflow-hidden relative bg-[#0057ff]/20">
                 {/* Profile Image with Red Tint */}
-                <div className="absolute inset-0 bg-red-600/40 mix-blend-color z-10" />
+                <div className="absolute inset-0 bg-blue-600/40 mix-blend-color z-10" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-20" />
                 <img
                   src="/images/profile_photo.png"

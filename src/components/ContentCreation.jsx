@@ -15,7 +15,7 @@ const ContentCreation = () => {
     <section id="content-creation" className="relative bg-[#020202] py-24 border-t border-white/5 overflow-hidden">
       
       {/* Background Red Glow */}
-      <div className="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-[#e60023]/20 rounded-full blur-[150px] z-0 pointer-events-none" />
+      <div className="absolute top-[-10%] left-[-10%] w-[600px] h-[600px] bg-[#0057ff]/20 rounded-full blur-[150px] z-0 pointer-events-none" />
 
       <div className="container mx-auto px-6 md:px-12 relative z-20">
         
@@ -52,7 +52,7 @@ const ContentCreation = () => {
                 video.type === 'long' ? 'sm:col-span-2 h-[220px] sm:h-[280px] md:h-[320px]' : 'h-[220px] sm:h-[280px] md:h-[320px]'
               }`}
             >
-              <div className="absolute inset-0 bg-gradient-to-t from-[#e60023]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0057ff]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none z-10" />
               <iframe
                 src={video.src}
                 title={`Content Video ${video.id}`}

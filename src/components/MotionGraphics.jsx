@@ -25,7 +25,7 @@ const MotionGraphics = () => {
       {/* HEADER SECTION */}
       <div className="relative w-full py-20 flex flex-col items-center justify-center">
         {/* Top Left Red Glow */}
-        <div className="absolute top-[-20%] left-[-10%] w-96 h-96 bg-[#e60023]/30 rounded-full blur-[120px] z-0" />
+        <div className="absolute top-[-20%] left-[-10%] w-96 h-96 bg-[#0057ff]/30 rounded-full blur-[120px] z-0" />
 
         <div className="relative z-10 text-center">
           <h2 className="text-7xl md:text-8xl font-bebas text-white tracking-wide leading-none m-0 text-shadow-md">
@@ -39,7 +39,7 @@ const MotionGraphics = () => {
 
       {/* MAIN VIDEO SHOWCASE SLIDER */}
       <div className="w-full relative z-10 pb-20">
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-[#6b0f1a]/50 to-black z-0" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-[#0a1a4e]/50 to-black z-0" />
         <div className="container mx-auto px-6 relative z-10 flex flex-col items-center py-10">
 
           <div className="relative flex items-center justify-center w-full max-w-lg">
@@ -95,7 +95,7 @@ const MotionGraphics = () => {
               <button
                 key={i}
                 onClick={() => setCurrentIndex(i)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${i === currentIndex ? 'bg-[#e60023] scale-125' : 'bg-white/30 hover:bg-white/60'
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${i === currentIndex ? 'bg-[#0057ff] scale-125' : 'bg-white/30 hover:bg-white/60'
                   }`}
               />
             ))}
@@ -108,7 +108,7 @@ const MotionGraphics = () => {
       <div className="w-full flex flex-row h-[250px] md:h-[400px] relative z-20">
 
         {/* Block 1 */}
-        <div className="w-1/4 h-full bg-[#a30b32] flex items-center justify-center relative overflow-hidden group">
+        <div className="w-1/4 h-full bg-[#0a2a7a] flex items-center justify-center relative overflow-hidden group">
           <h3 className="text-white font-bebas text-2xl md:text-5xl tracking-wide italic leading-none text-center px-4 transform group-hover:scale-110 transition-transform duration-500">
             SUA LOJA COM
           </h3>

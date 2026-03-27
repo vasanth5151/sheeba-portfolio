@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <footer className="relative bg-[#020202] py-32 overflow-hidden flex flex-col items-center border-t border-white/5">
       {/* Background Red Glow */}
-      <div className="absolute bottom-[-20%] left-1/2 transform -translate-x-1/2 w-[800px] h-[400px] bg-[#e60023]/40 rounded-[100%] blur-[100px] z-0 pointer-events-none" />
+      <div className="absolute bottom-[-20%] left-1/2 transform -translate-x-1/2 w-[800px] h-[400px] bg-[#0057ff]/40 rounded-[100%] blur-[100px] z-0 pointer-events-none" />
 
       {/* Title */}
       <div className="relative z-10 text-center mb-16">
@@ -33,7 +33,7 @@ const Footer = () => {
       <div className="relative z-10 flex flex-wrap gap-8 md:gap-14 items-center text-white/60 text-sm font-sans tracking-wide">
 
         <a href="mailto:fooyzeffects128@gmail.com" className="flex items-center gap-3 hover:text-white transition-colors duration-300 group">
-          <span className="group-hover:text-[#e60023] transition-colors"><Mail size={20} /></span>
+          <span className="group-hover:text-[#0057ff] transition-colors"><Mail size={20} /></span>
           <span>fooyzeffects128@gmail.com</span>
         </a>
 
