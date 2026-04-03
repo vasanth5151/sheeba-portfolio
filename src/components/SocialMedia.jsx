@@ -176,30 +176,38 @@ const SocialMedia = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          className="relative"
         >
           <div className="text-center mb-10">
             <h3 className="text-3xl md:text-4xl font-bebas text-white tracking-wider mb-2">Freelance Clients</h3>
             <p className="text-white/30 font-sans text-xs tracking-wider">BRANDS I'VE WORKED WITH</p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
-            {clients.map((client, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 15 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.04 }}
-                whileHover={{ y: -3 }}
-                className="group bg-white/[0.03] border border-white/8 rounded-2xl px-4 py-4 hover:border-[#0057ff]/40 hover:bg-[#0057ff]/5 transition-all duration-300 text-center"
-              >
-                <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#833ab4] via-[#fd1d1d] to-[#fcb045] flex items-center justify-center mx-auto mb-2.5">
-                  <InstagramSvg size={14} className="text-white" />
+          <div className="relative overflow-hidden py-10 before:content-[''] before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-20 before:bg-gradient-to-r before:from-[#030308] before:to-transparent before:pointer-events-none after:content-[''] after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-20 after:bg-gradient-to-l after:from-[#030308] after:to-transparent after:pointer-events-none">
+            <motion.div
+              className="flex gap-4 w-max px-4"
+              animate={{
+                x: ["0%", "-50%"],
+              }}
+              transition={{
+                duration: 25,
+                repeat: Infinity,
+                ease: "linear",
+              }}
+            >
+              {[...clients, ...clients].map((client, i) => (
+                <div
+                  key={i}
+                  className="w-[180px] sm:w-[240px] flex-shrink-0 bg-white/[0.03] border border-white/8 rounded-2xl px-6 py-8 hover:border-[#0057ff]/40 hover:bg-[#0057ff]/5 transition-all duration-300 text-center"
+                >
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#833ab4] via-[#fd1d1d] to-[#fcb045] flex items-center justify-center mx-auto mb-4">
+                    <InstagramSvg size={18} className="text-white" />
+                  </div>
+                  <p className="text-white text-sm font-semibold leading-tight mb-1">{client.name}</p>
+                  <p className="text-white/25 text-[10px] font-sans">@{client.ig}</p>
                 </div>
-                <p className="text-white text-xs font-semibold leading-tight">{client.name}</p>
-                <p className="text-white/25 text-[9px] mt-1 font-sans">@{client.ig}</p>
-              </motion.div>
-            ))}
+              ))}
+            </motion.div>
           </div>
         </motion.div>
 
