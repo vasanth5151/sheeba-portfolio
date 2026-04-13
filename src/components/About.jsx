@@ -31,7 +31,7 @@ const About = () => {
                 <img
                   src="/images/about-pic.jpg"
                   alt="Sheeba Venkatesan"
-                  className="w-full h-full object-cover object-top z-0"
+                  className="w-full h-full object-cover scale-150 z-0"
                 />
                 {/* Name Tag at Bottom */}
                 <div className="absolute bottom-0 left-0 right-0 z-30 p-6">
